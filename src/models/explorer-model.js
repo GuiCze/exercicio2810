@@ -13,13 +13,11 @@ const explorerSchema = new Schema({
         required: true
     },
     expeditionsParticipated: {
-        type: Number,
-        required: true
+        type: Number
     },
     speciesDiscovered: {
         type: [db.SchemaTypes.ObjectId],
-        ref:"Species",
-        required: true
+        ref:"Species"
     }
 })
 
